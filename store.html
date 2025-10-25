@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <script>
+        if (location.pathname.endsWith(".html")) {
+            location.replace(location.pathname.replace(".html", ""));
+        }
+    </script>
     <div class="language-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="ar">عربي</button>
