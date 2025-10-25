@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <script>
+        if (location.pathname.endsWith(".html")) {
+            location.replace(location.pathname.replace(".html", ""));
+        }
+    </script>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
