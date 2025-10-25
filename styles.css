@@ -420,9 +420,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.hero-stats .stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-glow);
+@media (hover: hover) and (pointer: fine) {
+    .hero-stats .stat-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-glow);
+    }
 }
 
 .hero-stats .stat-number {
@@ -476,8 +478,10 @@ body {
     transition: left 0.5s;
 }
 
-.btn:hover::before {
-    left: 100%;
+@media (hover: hover) and (pointer: fine) {
+    .btn:hover::before {
+        left: 100%;
+    }
 }
 
 .btn-primary {
@@ -486,9 +490,11 @@ body {
     box-shadow: var(--shadow-glow);
 }
 
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(199, 171, 104, 0.4);
+@media (hover: hover) and (pointer: fine) {
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(199, 171, 104, 0.4);
+    }
 }
 
 .btn-secondary {
@@ -497,10 +503,12 @@ body {
     border: 2px solid var(--gold-accent);
 }
 
-.btn-secondary:hover {
-    background: var(--gold-accent);
-    color: var(--primary-black);
-    transform: translateY(-3px);
+@media (hover: hover) and (pointer: fine) {
+    .btn-secondary:hover {
+        background: var(--gold-accent);
+        color: var(--primary-black);
+        transform: translateY(-3px);
+    }
 }
 
 .scroll-indicator {
@@ -1297,9 +1305,11 @@ section {
         transition: all 0.3s ease;
     }
     
-    .hero-stats .stat-item:hover {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 10px 25px rgba(199, 171, 104, 0.3);
+    @media (hover: hover) and (pointer: fine) {
+        .hero-stats .stat-item:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(199, 171, 104, 0.3);
+        }
     }
     
     .hero-buttons {
@@ -1317,9 +1327,11 @@ section {
         transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     
-    .btn:hover {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 15px 35px rgba(199, 171, 104, 0.4);
+    @media (hover: hover) and (pointer: fine) {
+        .btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(199, 171, 104, 0.4);
+        }
     }
     
     .btn:active {
@@ -1537,9 +1549,11 @@ section {
         animation: scaleIn 0.6s ease;
     }
     
-    .hero-stats .stat-item:hover {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 8px 20px rgba(199, 171, 104, 0.3);
+    @media (hover: hover) and (pointer: fine) {
+        .hero-stats .stat-item:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(199, 171, 104, 0.3);
+        }
     }
     
     .hero-stats .stat-number {
@@ -1564,9 +1578,11 @@ section {
         transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     
-    .btn:hover {
-        transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 10px 25px rgba(199, 171, 104, 0.4);
+    @media (hover: hover) and (pointer: fine) {
+        .btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(199, 171, 104, 0.4);
+        }
     }
     
     .btn:active {
