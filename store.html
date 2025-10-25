@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - Iraq Cafè Dinar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">عربي</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./images/logo.gif" alt="Iraq Cafè Logo" class="logo-gif">
+                <span data-translate="nav.title">Iraq Cafè</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-translate="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-translate="nav.about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rules.html" class="nav-link" data-translate="nav.rules">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link" data-translate="nav.team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store.html" class="nav-link active" data-translate="nav.store">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servers.html" class="nav-link" data-translate="nav.servers">Servers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-translate="nav.contact">Contact</a>
+                </li>
+                <li class="nav-item mobile-lang-switcher">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ar">عربي</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Iraq Cafè Dinar Store</h1>
+            <p class="page-subtitle" data-translate="store.subtitle">Exclusive merchandise and Discord perks</p>
+            <div class="currency-info">
+                <div class="currency-badge">
+                    <i class="fas fa-coins"></i>
+                    <span>ICD = Iraq Cafè Dinar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="nitro">Nitro</button>
+                <button class="tab-btn" data-category="roles">Roles</button>
+                <button class="tab-btn" data-category="voice">Voice Rooms</button>
+                <button class="tab-btn" data-category="merchandise">Merchandise</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-section active" data-category="nitro">
+        <div class="container">
+            <h2 class="section-title">Discord Nitro</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>نيترو بيسك</h3>
+                    <p class="product-desc">Discord Nitro Basic</p>
+                    <div class="product-price">7500 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="nitro-basic">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>نيترو كيمنك</h3>
+                    <p class="product-desc">Discord Nitro Classic</p>
+                    <div class="product-price">15000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="nitro-classic">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-section" data-category="roles">
+        <div class="container">
+            <h2 class="section-title">Discord Roles</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>إفكت بروفايل (5 دولار)</h3>
+                    <p class="product-desc">Profile Effect - $5</p>
+                    <div class="product-price">8000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="profile-effect">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>نيم بليت (5 دولار)</h3>
+                    <p class="product-desc">Name Plate - $5</p>
+                    <div class="product-price">9000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="name-plate">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>رول صور (شهر)</h3>
+                    <p class="product-desc">Image Role - 1 Month</p>
+                    <div class="product-price">6500 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="image-role-month">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>رول صور (دائم)</h3>
+                    <p class="product-desc">Image Role - Permanent</p>
+                    <div class="product-price">30000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="image-role-permanent">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>رول موف (شهر)</h3>
+                    <p class="product-desc">Move Role - 1 Month</p>
+                    <div class="product-price">15000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="move-role-month">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>رول موف (دائم)</h3>
+                    <p class="product-desc">Move Role - Permanent</p>
+                    <div class="product-price">45000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="move-role-permanent">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-user-crown"></i>
+                    </div>
+                    <h3>رول خاص بك (شهر)</h3>
+                    <p class="product-desc">Custom Role - 1 Month</p>
+                    <div class="product-price">10000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="custom-role-month">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-user-crown"></i>
+                    </div>
+                    <h3>رول خاص بك (4 أشهر)</h3>
+                    <p class="product-desc">Custom Role - 4 Months</p>
+                    <div class="product-price">30000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="custom-role-4months">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-section" data-category="voice">
+        <div class="container">
+            <h2 class="section-title">Voice Rooms</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>روم صوتي خاص (أسبوع)</h3>
+                    <p class="product-desc">Private Voice Room - 1 Week</p>
+                    <div class="product-price">6500 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="voice-room-week">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>روم صوتي خاص (شهر)</h3>
+                    <p class="product-desc">Private Voice Room - 1 Month</p>
+                    <div class="product-price">20000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="voice-room-month">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>روم صوتي خاص (دائم)</h3>
+                    <p class="product-desc">Private Voice Room - Permanent</p>
+                    <div class="product-price">60000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="voice-room-permanent">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>شات كتابي داخل رومك الصوتي</h3>
+                    <p class="product-desc">Text Chat in Your Voice Room</p>
+                    <div class="product-price">10000 ICD</div>
+                    <button class="btn btn-primary buy-btn" data-product="voice-room-chat">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-section" data-category="merchandise">
+        <div class="container">
+            <h2 class="section-title">Merchandise</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Iraq Cafè T-Shirt</h3>
+                    <p class="product-desc">Official community merchandise</p>
+                    <div class="product-price">$25.00</div>
+                    <button class="btn btn-primary buy-btn" data-product="tshirt">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Iraq Cafè Mug</h3>
+                    <p class="product-desc">Perfect for your morning coffee</p>
+                    <div class="product-price">$15.00</div>
+                    <button class="btn btn-primary buy-btn" data-product="mug">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-sticker-mule"></i>
+                    </div>
+                    <h3>Discord Stickers</h3>
+                    <p class="product-desc">Express yourself with custom stickers</p>
+                    <div class="product-price">$5.00</div>
+                    <button class="btn btn-primary buy-btn" data-product="stickers">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Gaming Accessories</h3>
+                    <p class="product-desc">Level up your gaming setup</p>
+                    <div class="product-price">$30.00</div>
+                    <button class="btn btn-primary buy-btn" data-product="accessories">
+                        <span data-translate="store.buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-info">
+        <div class="container">
+            <h2 class="section-title" data-translate="store.payment">Payment Information</h2>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Iraq Cafè Dinar (ICD)</h3>
+                    <p data-translate="store.payment.icd">Our exclusive virtual currency</p>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <h3>PayPal</h3>
+                    <p data-translate="store.payment.paypal">Secure online payments</p>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Credit Card</h3>
+                    <p data-translate="store.payment.card">All major cards accepted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.gif" alt="Iraq Cafè Logo" class="footer-logo-gif">
+                    <span>Iraq Cafè</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" data-translate="nav.home">Home</a>
+                    <a href="about.html" data-translate="nav.about">About</a>
+                    <a href="rules.html" data-translate="nav.rules">Rules</a>
+                    <a href="team.html" data-translate="nav.team">Team</a>
+                    <a href="store.html" data-translate="nav.store">Store</a>
+                    <a href="servers.html" data-translate="nav.servers">Servers</a>
+                    <a href="contact.html" data-translate="nav.contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://discord.gg/iraq" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/iraq_cafe" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitch.tv/iraq_cafe" target="_blank"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Iraq Cafè. <span data-translate="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>

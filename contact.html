@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Iraq Cafè</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">عربي</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./images/logo.gif" alt="Iraq Cafè Logo" class="logo-gif">
+                <span data-translate="nav.title">Iraq Cafè</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-translate="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-translate="nav.about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rules.html" class="nav-link" data-translate="nav.rules">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link" data-translate="nav.team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store.html" class="nav-link" data-translate="nav.store">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servers.html" class="nav-link" data-translate="nav.servers">Servers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active" data-translate="nav.contact">Contact</a>
+                </li>
+                <li class="nav-item mobile-lang-switcher">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ar">عربي</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-translate="contact.title">Contact Us</h1>
+            <p class="page-subtitle" data-translate="contact.subtitle">Get in touch with our community</p>
+        </div>
+    </section>
+
+    <section class="contact-methods">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.methods">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card discord">
+                    <div class="contact-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord Server</h3>
+                    <p data-translate="contact.discord.desc">Join our main community server</p>
+                    <a href="https://discord.gg/iraq" class="contact-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-translate="contact.discord.join">Join Now</span>
+                    </a>
+                </div>
+                <div class="contact-card instagram">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p data-translate="contact.instagram.desc">Follow us for updates and photos</p>
+                    <a href="https://www.instagram.com/iraq_cafe" class="contact-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>@iraq_cafe</span>
+                    </a>
+                </div>
+                <div class="contact-card twitch">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitch"></i>
+                    </div>
+                    <h3>Twitch</h3>
+                    <p data-translate="contact.twitch.desc">Watch our live streams</p>
+                    <a href="https://www.twitch.tv/iraq_cafe" class="contact-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>@iraq_cafe</span>
+                    </a>
+                </div>
+                <div class="contact-card email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p data-translate="contact.email.desc">Contact us directly</p>
+                    <a href="mailto:contact@iraq-cafe.xyz" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@iraq-cafe.xyz</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title" data-translate="contact.form.title">Send us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-translate="contact.form.name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="contact.form.email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-translate="contact.form.subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" data-translate="contact.form.subject.select">Select a subject</option>
+                            <option value="general" data-translate="contact.form.subject.general">General Inquiry</option>
+                            <option value="support" data-translate="contact.form.subject.support">Technical Support</option>
+                            <option value="partnership" data-translate="contact.form.subject.partnership">Partnership</option>
+                            <option value="report" data-translate="contact.form.subject.report">Report an Issue</option>
+                            <option value="other" data-translate="contact.form.subject.other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="contact.form.message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required data-translate="contact.form.message.placeholder" placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-translate="contact.form.send">Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.faq">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.how-join">How do I join the Discord server?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.how-join.answer">
+                            Click the Discord link above or use the invite code: discord.gg/iraq. 
+                            Make sure to read our rules and introduce yourself in the welcome channel!
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.server-info">How do I get server information?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.server-info.answer">
+                            Server IPs and connection details are available in our Discord server. 
+                            Join our Discord to get the latest server information and updates.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.store">How does the Iraq Cafè Dinar store work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.store.answer">
+                            Our store uses Iraq Cafè Dinar (ICD) as virtual currency. You can purchase 
+                            Discord perks, roles, and merchandise. Contact our staff for more information.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.report">How do I report a problem?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.report.answer">
+                            You can report issues through our Discord server, contact our staff directly, 
+                            or use the contact form above. We take all reports seriously and respond quickly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-guidelines">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.guidelines">Community Guidelines</h2>
+            <div class="guidelines-content">
+                <div class="guideline-item">
+                    <div class="guideline-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 data-translate="contact.guidelines.respect">Respect & Kindness</h3>
+                    <p data-translate="contact.guidelines.respect.desc">
+                        Treat all community members with respect and kindness, regardless of background or beliefs.
+                    </p>
+                </div>
+                <div class="guideline-item">
+                    <div class="guideline-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 data-translate="contact.guidelines.language">Language Policy</h3>
+                    <p data-translate="contact.guidelines.language.desc">
+                        English and Arabic are welcome. Keep conversations inclusive and understandable for all members.
+                    </p>
+                </div>
+                <div class="guideline-item">
+                    <div class="guideline-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-translate="contact.guidelines.safety">Safety First</h3>
+                    <p data-translate="contact.guidelines.safety.desc">
+                        We maintain a safe environment for all members. Report any inappropriate behavior to our staff.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.gif" alt="Iraq Cafè Logo" class="footer-logo-gif">
+                    <span>Iraq Cafè</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" data-translate="nav.home">Home</a>
+                    <a href="about.html" data-translate="nav.about">About</a>
+                    <a href="rules.html" data-translate="nav.rules">Rules</a>
+                    <a href="team.html" data-translate="nav.team">Team</a>
+                    <a href="store.html" data-translate="nav.store">Store</a>
+                    <a href="servers.html" data-translate="nav.servers">Servers</a>
+                    <a href="contact.html" data-translate="nav.contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://discord.gg/iraq" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/iraq_cafe" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitch.tv/iraq_cafe" target="_blank"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Iraq Cafè. <span data-translate="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>
