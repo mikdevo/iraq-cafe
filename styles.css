@@ -420,6 +420,38 @@ body {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .hero-stats .stat-item:hover,
+    .hero-stats .stat-item:focus,
+    .hero-stats .stat-item:active {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .btn-secondary:hover,
+    .btn-secondary:focus,
+    .btn-secondary:active {
+        transform: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        color: var(--light-cream) !important;
+    }
+}
+
 @media (hover: hover) and (pointer: fine) {
     .hero-stats .stat-item:hover {
         transform: translateY(-5px);
@@ -476,6 +508,14 @@ body {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s;
+}
+
+@media (max-width: 768px) {
+    .btn:hover::before,
+    .btn:focus::before,
+    .btn:active::before {
+        left: -100% !important;
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -5820,5 +5860,63 @@ section {
     
     body.rtl .footer-bottom {
         text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    *:hover,
+    *:focus,
+    *:active {
+        transform: none !important;
+        box-shadow: none !important;
+        background: inherit !important;
+        color: inherit !important;
+        border-color: inherit !important;
+    }
+    
+    .hero-stats .stat-item:hover,
+    .hero-stats .stat-item:focus,
+    .hero-stats .stat-item:active {
+        transform: none !important;
+        box-shadow: none !important;
+        background: rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        background: var(--gradient-gold) !important;
+        color: var(--primary-black) !important;
+        transform: none !important;
+        box-shadow: var(--shadow-glow) !important;
+    }
+    
+    .btn-secondary:hover,
+    .btn-secondary:focus,
+    .btn-secondary:active {
+        background: transparent !important;
+        color: var(--light-cream) !important;
+        border: 2px solid var(--gold-accent) !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    *::before:hover,
+    *::after:hover,
+    *::before:focus,
+    *::after:focus,
+    *::before:active,
+    *::after:active {
+        left: -100% !important;
+        right: -100% !important;
+        opacity: 0 !important;
+        transform: none !important;
     }
 }
