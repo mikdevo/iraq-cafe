@@ -5919,4 +5919,45 @@ section {
         opacity: 0 !important;
         transform: none !important;
     }
+    
+    * {
+        backdrop-filter: none !important;
+        filter: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .language-switcher {
+        backdrop-filter: none !important;
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+    
+    .navbar {
+        backdrop-filter: none !important;
+    }
+    
+    .hero-stats .stat-item {
+        backdrop-filter: none !important;
+        filter: none !important;
+    }
+    
+    .btn {
+        backdrop-filter: none !important;
+        filter: none !important;
+    }
+    
+    *::before,
+    *::after {
+        display: none !important;
+        opacity: 0 !important;
+    }
+    
+    .hero-title,
+    .title-line,
+    .title-main,
+    .hero-description,
+    .hero-stats,
+    .hero-buttons {
+        animation: slideInFromBottom 0.8s ease !important;
+    }
 }
